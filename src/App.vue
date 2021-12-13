@@ -1,15 +1,19 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar />
+    <div id="content" class="content">
+      <router-view />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import 'ant-design-vue/dist/antd.css';
+import Navbar from './components/layout/Navbar.vue';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
   }
 };
 </script>
