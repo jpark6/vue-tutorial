@@ -1,22 +1,19 @@
 <template>
   <div>
     <Navbar />
-    <div
-      id="content"
-      class="content"
-    >
+    <div id="content" class="content">
       <router-view />
     </div>
   </div>
 </template>
 
 <script>
-import Navbar from './components/layout/Navbar.vue';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
+import Navbar from "./components/layout/Navbar.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Navbar,
   },
@@ -24,5 +21,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "@/styles/app.scss";
+@import "@/styles/app.scss";
 </style>
