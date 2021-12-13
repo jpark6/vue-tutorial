@@ -4,10 +4,13 @@
   </div>
 </template>
 <script>
-export default ({
+export default {
   name: 'Home',
-  setup() {
-
+  setup() {},
+  data() {
+    return {
+      title: 'Vue Tutorial',
+    };
   },
-});
+};
 </script>
